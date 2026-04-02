@@ -1,0 +1,23 @@
+{
+  "frontend/src/App.tsx": "Main application component with TanStack Router setup, routing configuration, theme/cart/auth providers, profile/Stripe setup modals, and useEffect hook to refetch admin status when user profile is created to ensure immediate UI updates after first-user admin assignment.",
+  "frontend/src/hooks/useQueries.ts": "React Query hooks for all backend operations including user profiles, products, orders, Stripe integration, and useAuthorizeAdmin hook that calls the backend's authorizeAdmin function with conditional admin status refetching only on successful authorization.",
+  "frontend/src/contexts/CartContext.tsx": "Shopping cart context provider managing cart items with localStorage persistence, add/remove/update operations, and total calculations.",
+  "frontend/src/components/Layout.tsx": "Root layout component wrapping all pages with header, main content area, and footer.",
+  "frontend/src/components/Header.tsx": "Responsive navigation header with logo, menu links including new Admin Login link visible to all users, shopping cart indicator, authentication button, and mobile menu support.",
+  "frontend/src/components/Footer.tsx": "Footer component with brand information, navigation links, social media icons including Instagram link to Tenro's Instagram profile, and caffeine.ai attribution.",
+  "frontend/src/components/ProfileSetupModal.tsx": "Modal dialog for first-time user profile setup with name, email, and optional mobile number input fields, triggering automatic admin status refetch after profile creation to detect first-user auto-promotion.",
+  "frontend/src/components/StripeSetupModal.tsx": "Admin-only modal for configuring Stripe payment settings with secret key and allowed countries.",
+  "frontend/src/pages/HomePage.tsx": "Homepage featuring hero banner, brand features, featured products grid with type-safe routing using params prop, brand story section, and collection preview.",
+  "frontend/src/pages/ProductsPage.tsx": "Product catalog page with search, category filtering, sorting options, and responsive product grid display using type-safe routing with params prop.",
+  "frontend/src/pages/ProductDetailPage.tsx": "Individual product detail page with image gallery, size selection, quantity controls, and add-to-cart functionality.",
+  "frontend/src/pages/CartPage.tsx": "Shopping cart page displaying cart items with quantity controls, remove options, and order summary with checkout button.",
+  "frontend/src/pages/CheckoutPage.tsx": "Checkout page showing order summary and Stripe payment integration for completing purchases.",
+  "frontend/src/pages/PaymentSuccessPage.tsx": "Success page displayed after successful payment with order confirmation and navigation options.",
+  "frontend/src/pages/PaymentFailurePage.tsx": "Failure page displayed when payment fails with retry and support options.",
+  "frontend/src/pages/AccountPage.tsx": "User account page displaying profile information, order history, and admin status section with updated messaging that reflects the fresh admin system without specific user references.",
+  "frontend/src/pages/AdminPage.tsx": "Admin dashboard with enhanced loading states, professional access denied screen, and improved visual design featuring product and order management tabs with proper admin verification.",
+  "frontend/src/components/admin/ProductManagement.tsx": "Admin component for creating, editing, and deleting products with form dialog and product list.",
+  "frontend/src/components/admin/OrderManagement.tsx": "Admin component for viewing all orders and updating order status with dropdown selectors.",
+  "frontend/src/index.css": "Global styles with OKLCH color system defining monochromatic design tokens for light and dark modes with minimal, elegant aesthetic.",
+  "frontend/src/pages/AdminLoginPage.tsx": "Professional admin login page with modern business website styling, featuring mobile number and OTP verification flow with enhanced UI/UX, proper error handling, and seamless integration with the backend's first-admin auto-assignment system."
+}
